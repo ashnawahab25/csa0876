@@ -1,0 +1,23 @@
+def hamming_distance(x, y):
+    # Convert integers to binary strings
+    binary_x = bin(x)[2:]  # [2:] to remove '0b' prefix
+    binary_y = bin(y)[2:]  # [2:] to remove '0b' prefix
+
+    # Make the binary strings of equal length by padding with zeros
+    max_length = max(len(binary_x), len(binary_y))
+    binary_x = binary_x.zfill(max_length)
+    binary_y = binary_y.zfill(max_length)
+
+    # Initialize the Hamming distance
+    distance = 0
+
+    # Iterate over each bit and compare
+    for bit_x, bit_y in zip(binary_x, binary_y):
+        if bit_x != bit_y:
+            distance += 1
+
+    return distance
+
+# Test cases
+print(hamming_distance(1, 4))
+print(hamming_distance(3, 1))
