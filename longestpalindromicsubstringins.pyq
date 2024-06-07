@@ -24,5 +24,5 @@ def longestPalindrome(s: str) -> str:
     return s[start:end + 1]
 
 # Test cases
-print(longestPalindrome("babad"))  # Output: "bab" or "aba"
-print(longestPalindrome("cbbd"))   # Output: "bb"
+print(longestPalindrome("babad"))  
+print(longestPalindrome("cbbd"))   
