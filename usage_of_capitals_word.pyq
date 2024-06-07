@@ -1,0 +1,19 @@
+def is_proper_capital_usage(word):
+    # Check if all letters in the word are uppercase
+    if word.isupper():
+        return True
+
+    # Check if all letters in the word are lowercase
+    if word.islower():
+        return True
+
+    # Check if only the first letter in the word is uppercase
+    if word[0].isupper() and word[1:].islower():
+        return True
+
+    # If none of the above conditions are met, return False
+    return False
+
+# Test cases
+print(is_proper_capital_usage("USA"))
+print(is_proper_capital_usage("FlaG"))
