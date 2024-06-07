@@ -1,0 +1,17 @@
+def fibonacci(n):
+    if n <= 2:
+        return n-1
+
+    # Initialize variables for the first two Fibonacci numbers
+    fib_prev = 0
+    fib_current = 1
+
+    # Iterate to find the nth Fibonacci number
+    for _ in range(3, n + 1):
+        fib_prev, fib_current = fib_current, fib_prev + fib_current
+
+    return fib_current
+
+# Test cases
+print(fibonacci(2))
+print(fibonacci(5))
