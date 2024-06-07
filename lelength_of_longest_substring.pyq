@@ -13,9 +13,9 @@ def lengthOfLongestSubstring(s: str) -> int:
     return max_length
 
 # Test cases
-print(lengthOfLongestSubstring("abcabcbb"))  # Output: 3
-print(lengthOfLongestSubstring("bbbbb"))     # Output: 1
-print(lengthOfLongestSubstring("pwwkew"))    # Output: 3
-print(lengthOfLongestSubstring(""))          # Output: 0
-print(lengthOfLongestSubstring(" "))         # Output: 1
-print(lengthOfLongestSubstring("au"))        # Output: 2
+print(lengthOfLongestSubstring("abcabcbb"))  
+print(lengthOfLongestSubstring("bbbbb"))     
+print(lengthOfLongestSubstring("pwwkew"))    
+print(lengthOfLongestSubstring(""))          
+print(lengthOfLongestSubstring(" "))         
+print(lengthOfLongestSubstring("au"))        
